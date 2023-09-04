@@ -1,2 +1,3 @@
 # Kabibi-Food
-Projet commun - Site Horeca
+Projet commun (4j) - Site Horeca
+Lidwine Carême & Elisabeth Leyder
