@@ -1,0 +1,7 @@
+@import "variables";
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 2fr 2fr 2fr 2fr 3fr 2fr;
+    border: 1px solid black;
+}
