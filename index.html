@@ -3,46 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ceda9163bb.js" crossorigin="anonymous"></script>
     <title>Kababi Food</title>
 </head>
 <body>
-<!-- Bannière Logo - Menu - HomePage -->
 
-    <header id="Home">
-        <div class="container">
-            <img src="./Images/Icon/logo.png">
-            <div class="dropdown">
-                <button class="mainMenuButton"><img src="./Images/Icon/menu_hamburger1-removebg-preview.png"></button>
-                <div class="dropdow-child">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#About">About</a></li>
-                        <li><a href="#">Page</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#ctc">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="phone">
-                    <img src="./Images/Icon Contact/phone.png">
-                    <p>+012(345)67899</p>
-                </div>
-                <div class="booking">
-                    <button>Book a table <img src="./Images/Icon Signalisation/Youtube.png"></button>
-                </div>
-                <div class="slogan">
-                    <h1>Best quality foods</h1>
-                    <img src="./Images/Icon/iconbgabout.png">
+    <!-- Bannière Logo - Menu - HomePage -->
+    <section id="home">
+        <header>
+            <img src="./Images/Icon/logo.png" alt="logoKababi" class="logoKababi">
+            <nav>
+                <ul>
+                    <li><a href="#">Home <i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#">Page <i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li><a href="#Food">Shop <i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li><a href="#ctc">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="headerPhone">
+                <img src="./Images/Icon Contact/phone.png"> +012 (345) 67899
             </div>
-            <button>Explore our menu <img src="./Images/Icon Signalisation/Youtube.png"></button>  <!--manque la flèche-->
-        </div>
-    </header>
+            <div class="booking">
+                <a href="">Book a table <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </header>
 
+        <h1><img src="./Images/Icon/img_bg2.png"> Best quality foods</h1>
+        <i class="fa-solid fa-play boutonPlay"></i>
+        <a href="#category" class="boutonExplore">Explore our menu <i class="fa-solid fa-arrow-right"></i></a>
+
+    </section>
     <!---------------------------------------------------------------->
     <main>
     <!-- Page 2 - Category -->
 
-        <section class="category">
+        <section class="category" id="category">
             <div class="container">
                 <h2>Category</h2>
                 <h3>Choose your best category</h3>
