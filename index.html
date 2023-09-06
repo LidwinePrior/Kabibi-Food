@@ -31,6 +31,7 @@
             <div class="booking">
                 <a href="">Book a table <i class="fa-solid fa-arrow-right"></i></a>
             </div>
+            <button class="menuButton"><i class="fa-solid fa-bars"></i></button>
         </header>
 
         <h1><img src="./Images/Icon/img_bg2.png"> Best quality foods</h1>
@@ -102,22 +103,20 @@
 <!----------------------------------------------------------------------->
 <!-- Demi-Page - Assiettes -->
         <section class="plates">
-            <div class="containerBis">
-                <img src="./Images/Gallery/imgfood1.png">
-                <img src="./Images/Gallery/imgfood2.jpg">
-                <img src="./Images/Gallery/imgfood3.png">
-            </div>
+            <img src="./Images/Gallery/imgfood1.png" class="unQuart">
+            <img src="./Images/Gallery/imgfood2.jpg" class="unDemi">
+            <img src="./Images/Gallery/imgfood3.png" class="unQuart">
         </section>
 <!----------------------------------------------------------------------->
 <!-- Page 3 - About Us -->
 
-        <section class="About" id="About">
+        <section class="about" id="About">
             <div class="container">
                 <div id="head">
+                    <img src="./Images/Icon/iconbgabout.png" class="bestLabel">
                     <h2>About Us</h2>
                     <h3>Why choose us</h3>
                     <h4>Best foods for you & family</h4>
-                    <img src="./Images/Icon/iconbgabout.png">
                 </div>
                 <div class="mainAbout">
                     <div>
@@ -125,12 +124,13 @@
                     </div>
                     <div>    
                         <p>We welcome you in a friendly and warm setting. Our staff is available to advise you. On the plate, we offer you a clever mix of authenticity and refinement. Our priority? Make you have a pleasant time</p>
+                        <div class="discoverMore">
+                            <a href="">Discover more <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>    
-                <div class="descoverMore">
-                    <a href="">Descover more <i class="fa-solid fa-arrow-right"></i></a>
-                </div>  
-            </div>
+                
+            </div>  
         </section>
 <!-------------------------------------------------------------------------->
 <!-- Page 4 - Our Menu -->
@@ -140,7 +140,6 @@
                 <h2>Our menu</h2>
                 <h3>Try our special offer</h3>
                 <h4>Best foods for you & family</h4>
-                <img src="./Images/Food/imgbg-our-menu.jpg" class="bestLabel">
                 <div class="box-price">
                     <h5>Raw Scallops From Erquy</h5>
                     <p>Candied Jerusalem artichokes, truffe</p>
@@ -360,4 +359,12 @@
 
     </footer>
 </body>
+<script>
+    // oupsy, mais on a pas trouvé mieux... XoXo
+    const menuButton = document.querySelector(".menuButton");
+    const navList = document.querySelector("header nav ul");
+    menuButton.addEventListener("click", function () {
+    navList.classList.toggle("active"); // toggle = active et désactive
+    });
+</script>
 </html>
