@@ -7,15 +7,9 @@ body { //collé au bord
 }
 
 .container {
-<<<<<<< HEAD
-    display: grid;
-    grid-template-rows: repeat(8,1fr);
     border: 1px solid black;
-=======
->>>>>>> Lid
     box-sizing: content-box;    
     width: 100%;
-
 }
 
 .mainMenuButton {
@@ -44,7 +38,7 @@ header {
             margin-left: 20%;
 
             li {
-            margin: 0 20px; // créée un espace entre
+                margin: 0 20px; // créée un espace entre
     
                 a {
                     text-decoration: none;
@@ -105,6 +99,7 @@ header {
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+
     h1 {
         font-size: 8rem; // rem = % de la taille de base
         line-height: 8rem;
@@ -148,7 +143,168 @@ header {
     }
 }
 // Home Page ---------------------------------------------------------------
+// Page 2 - Category (Lid)--------------------------------------------------
+.category {
+    background-color: $colorBgLight;
+}
+.titles:before {
+    position: absolute;
+    left: 5%;
+    content: "Category";
+    font-size: 4em;
+    color: $colorGold;
+    opacity: 10%;
+}
+.titles{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .subtitles {
+        padding: 10px;
+        padding: 10px;
+        text-align: center;
+        h3{
+            font-size: 1.5em;
+        }
+        h4{
+            font-size: 0.6em;
+        }  
+    }
+    img[alt="leaf"] {
+        position: absolute;
+        left: 60%;
+        width: 30%;
+        margin: 0;
+        z-index: 2;
+                
+    }
+}
+.boxes{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 90%;
+    .box{
+        background-color: $colorLight;
+        text-align: center;
+        padding: 10px 0;            
+        img[alt="food-gold"] {
+            width: 20%;
+        }
+        img[alt="food-white"] {
+            width: 20%;
+            display: none;
+        }
+        img[alt="arrow"] {
+            width: 5%;
+        }
+        img[alt="arrow-white"] {
+            width: 5%;
+            display: none;
+        }
+        &:hover {
+            background-color: $colorGold;
+            color:$colorLight;
+            position: relative;
+            img[alt="food-gold"]{
+                display: none;
+            }
+            img[alt="food-white"] {
+                display: inline-block;
+            }
+            img[alt="arrow"] {
+                display: none;
+            }
+            img[alt="arrow-white"] {
+                display: inline-block;
+            }
+        }
+    }
+}
+img[alt="mushroom"]{
+        width: 20%;
+}
+
+@media screen and (min-width:410px) and (max-width:768px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+// -------------------------------------------------------------------------
 // Page 3 - About Us -------------------------------------------------------
+.about {
+    background-color: $colorLight;
+    height: auto;
+    width: 90%;
+}
+h2 {
+    position: absolute;
+    text-align: center;
+    color: $colorGold;
+    opacity: 0.2;
+    font-size: 5.5rem;
+    font-weight: 200;
+    font-family: 'Forum';
+    text-transform: uppercase;
+    margin-left: 0%;
+    margin-top: 5%;
+    width: 60%;
+}
+h3 {
+    color: $colorDark;
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-family: 'Forum';
+    text-transform: uppercase;
+    margin: auto;
+    padding-top: 15%;
+    width: 50%; 
+        img {
+            align-items: flex-end;
+            margin: 20px;
+            border-radius: 5px; 
+        }
+}
+h4 {
+    font-size: 0.8rem;
+    font-family: 'Forum';
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}         
+.mainAbout {
+    display: grid;
+    grid: repeat(1, 60px) / auto-flow 50%;
+    margin: auto;
+    width: 90%;
+        img {
+            vertical-align: middle;
+            max-width: 100%;
+            height: auto;
+        }
+        p {
+            font-family: 'Forum';
+            padding: 15px;
+        }
+}
+        .descoverMore {
+            a {
+                width: 50%;
+                background-color: $colorGold;
+                color: $colorLight;
+                bottom: 0;
+                padding: 15px 30px;
+                border-radius: 5px;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                font-size: 0.8rem; 
+            }
+        }
 
 
 .category {
@@ -167,11 +323,6 @@ header {
         align-items: center;
         justify-content: center;
         .subtitles {
-<<<<<<< HEAD
-            padding: 10px;
-            padding: 10px;
-=======
->>>>>>> Lid
             text-align: center;
             h3{
                 font-size: 1.5em;
@@ -320,29 +471,8 @@ img[alt="mushroom"]{
     background-color: $colorLig;
 }
 
-.slider-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    .slide {
-        
-        img{
-            position:absolute;
-            width: 100%;
-            height: auto;
-        }
-    }
-    
-    #slide1:checked ~ .slide:nth-child(1),
-    #slide2:checked ~ .slide:nth-child(2),
-    #slide3:checked ~ .slide:nth-child(3),
-    #slide4:checked ~ .slide:nth-child(4),
-    #slide5:checked ~ .slide:nth-child(5),
-    #slide6:checked ~ .slide:nth-child(6) {
-        display: block;
-    }
-}
-     
+
+
 //@media screen and (min-width:410px) and (max-width:768px) {}
 
 //@media screen and (min-width: 768px) {}

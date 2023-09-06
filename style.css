@@ -5,8 +5,6 @@ body {
 }
 
 .container {
-  display: grid;
-  grid-template-rows: repeat 8, 1fr;
   border: 1px solid black;
   box-sizing: content-box;
   width: 100%;
@@ -132,7 +130,8 @@ header .booking a {
 .category {
   background-color: #FAF6F0;
 }
-.category .titles:before {
+
+.titles:before {
   position: absolute;
   left: 5%;
   content: "Category";
@@ -140,7 +139,8 @@ header .booking a {
   color: #C8A96A;
   opacity: 10%;
 }
-.category .titles {
+
+.titles {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -151,13 +151,13 @@ header .booking a {
   padding: 10px;
   text-align: center;
 }
-.category .titles .subtitles h3 {
+.titles .subtitles h3 {
   font-size: 1.5em;
 }
-.category .titles .subtitles h4 {
+.titles .subtitles h4 {
   font-size: 0.6em;
 }
-.category .titles img[alt=leaf] {
+.titles img[alt=leaf] {
   position: absolute;
   left: 60%;
   width: 30%;
@@ -214,80 +214,76 @@ img[alt=mushroom] {
   width: 20%;
 }
 
-.menu {
-  background-color: #FAF6F0;
-}
-.menu .titles:before {
-  position: absolute;
-  left: 5%;
-  content: "Category";
-  font-size: 4em;
-  color: #C8A96A;
-  opacity: 10%;
-}
-.menu .titles {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.menu .titles .subtitles {
-  text-align: center;
-}
-.menu .titles .subtitles h3 {
-  font-size: 1.5em;
-}
-.menu .titles .subtitles h4 {
-  font-size: 0.6em;
-}
-.menu img[alt=bread] {
-  position: absolute;
-  left: 40%;
-  opacity: 10%;
-  height: 80%;
-  z-index: 2;
-}
-.menu img[alt=steack] {
-  position: absolute;
-  height: 60%;
-  padding-top: 132%;
-  opacity: 10%;
-}
-.menu .box-prices {
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px;
-  width: 90%;
-  z-index: 1;
-}
-.menu .box-prices .box-price {
+.about {
   background-color: #FDFCFA;
-  border: 1px dotted #C8A96A;
-  border-radius: 5px;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  height: 100%;
-}
-.menu .box-prices .box-price .name-food {
-  padding-left: 10px;
-}
-.menu .box-prices .box-price .name-food p {
-  font-size: 0.6em;
-}
-.menu .box-prices .box-price .price {
-  text-align: center;
-  font-size: 2em;
-  color: #C8A96A;
+  height: auto;
+  width: 90%;
 }
 
-.gallery .slide {
-  width: 90%;
-  height: 60%;
-  overflow: auto;
+h2 {
+  position: absolute;
+  text-align: center;
+  color: #C8A96A;
+  opacity: 0.2;
+  font-size: 5.5rem;
+  font-weight: 200;
+  font-family: "Forum";
+  text-transform: uppercase;
+  margin-left: 0%;
+  margin-top: 5%;
+  width: 60%;
 }
-.gallery .slide img[alt=scroll] {
+
+h3 {
+  color: #090D0F;
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-family: "Forum";
+  text-transform: uppercase;
+  margin: auto;
+  padding-top: 15%;
+  width: 50%;
+}
+h3 img {
+  align-items: flex-end;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+h4 {
+  font-size: 0.8rem;
+  font-family: "Forum";
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.mainAbout {
+  display: grid;
+  grid: repeat(1, 60px)/auto-flow 50%;
+  margin: auto;
+  width: 90%;
+}
+.mainAbout img {
+  vertical-align: middle;
   max-width: 100%;
+  height: auto;
+}
+.mainAbout p {
+  font-family: "Forum";
+  padding: 15px;
+}
+
+.descoverMore a {
+  width: 50%;
+  background-color: #C8A96A;
+  color: #FDFCFA;
+  bottom: 0;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=style.css.map */

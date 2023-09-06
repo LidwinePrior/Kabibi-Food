@@ -15,4 +15,15 @@ $text-colorMedium : #F5EEE3;
 
 // font
 $text-transform : capitalize;
+@mixin text-h2 { 
+    color: $colorGold;
+    opacity: 0.2;
+    font-size: 5.5rem;
+    font-weight: 200;
+    font-family: 'Forum';
+    text-transform: uppercase;
+    margin-left: 0%;
+    margin-top: 5%;
+    width: 60%;
+}
 
