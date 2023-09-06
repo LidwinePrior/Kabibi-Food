@@ -12,79 +12,100 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- Bannière Logo - Menu - HomePage -->
 
-    <!-- Bannière Logo - Menu - HomePage -->
-    <section id="home">
-        <header>
-            <img src="./Images/Icon/logo.png" alt="logoKababi" class="logoKababi">
-            <nav>
-                <ul>
-                    <li><a href="#">Home <i class="fa-solid fa-chevron-down"></i></a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#">Page <i class="fa-solid fa-chevron-down"></i></a></li>
-                    <li><a href="#Food">Shop <i class="fa-solid fa-chevron-down"></i></a></li>
-                    <li><a href="#ctc">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="headerPhone">
-                <img src="./Images/Icon Contact/phone.png"> +012 (345) 67899
+    <header id="Home">
+        <div class="container">
+            <img src="./Images/Icon/logo.png">
+            <div class="dropdown">
+                <button class="mainMenuButton"><img src="./Images/Icon/menu_hamburger1-removebg-preview.png"></button>
+                <div class="dropdow-child">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#ctc">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="phone">
+                    <img src="./Images/Icon Contact/phone.png">
+                    <p>+012(345)67899</p>
+                </div>
+                <div class="booking">
+                    <button>Book a table <img src="./Images/Icon Signalisation/Youtube.png"></button>
+                </div>
+                <div class="slogan">
+                    <h1>Best quality foods</h1>
+                    <img src="./Images/Icon/iconbgabout.png">
             </div>
-            <div class="booking">
-                <a href="">Book a table <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-        </header>
+            <button>Explore our menu <img src="./Images/Icon Signalisation/Youtube.png"></button>  <!--manque la flèche-->
+        </div>
+    </header>
 
-        <h1><img src="./Images/Icon/img_bg2.png"> Best quality foods</h1>
-        <i class="fa-solid fa-play boutonPlay"></i>
-        <a href="#category" class="boutonExplore">Explore our menu <i class="fa-solid fa-arrow-right"></i></a>
-
-    </section>
     <!---------------------------------------------------------------->
     <main>
     <!-- Page 2 - Category -->
 
-        <section class="category" id="category">
+        <section class="category">
             <div class="container">
-                <h2>Category</h2>
-                <h3>Choose your best category</h3>
-                <h4>Best foods for you & family</h4>
-                <img src="./Images/feuille.png">
-                <div class="box">
-                    <img src="./Images/Icon/001-cheeseburger.png">
-                    <p>Cheesburger</p>
-                    <img src="./Images/Icon Signalisation/Youtube.png">
+                <div class="titles">
+                    <div class="subtitles">
+                        <h3>Choose your best category</h3>
+                        <h4>Best foods for you & family</h4>
+                    </div>
+                    <img src="./Images/feuille.png" alt="leaf">
                 </div>
-                <div class="box">
-                    <img src="./Images/Icon/002-pizza.png">
-                    <p>Pizza Slice</p>
-                    <img src="./Images/Icon Signalisation/Youtube.png">
+                <div class="boxes">
+                    <div class="box">
+                        <img src="./Images/Icon/001-cheeseburger.png" alt="food-gold">
+                        <img src="./Images/Icon/burger-white.png" alt="food-white">
+                        <p>Cheesburger</p>
+                        <img src="./Images/Icon Signalisation/Youtube.png" alt="arrow">
+                        <img src="./Images/Icon/arrow-white.png" alt="arrow-white">
+                    </div>
+                    <div class="box">
+                        <img src="./Images/Icon/002-pizza.png" alt="food-gold">
+                        <img src="./Images/Icon/pizza-white.png" alt="food-white">
+                        <p>Pizza Slice</p>
+                        <img src="./Images/Icon Signalisation/Youtube.png" alt="arrow">
+                        <img src="./Images/Icon/arrow-white.png" alt="arrow-white">
+                    </div>
+                    <div class="box">
+                        <img src="./Images/Icon/003-coffee.png" alt="food-gold">
+                        <img src="./Images/Icon/coffee-white.png" alt="food-white">
+                        <p>Coffee-Cup</p>
+                        <img src="./Images/Icon Signalisation/Youtube.png" alt="arrow">
+                        <img src="./Images/Icon/arrow-white.png" alt="arrow-white">
+                    </div>
+                    <div class="box">
+                        <img src="./Images/Icon/004-chicken-leg.png" alt="food-gold">
+                        <img src="./Images/Icon/chicken-white.png" alt="food-white">
+                        <p>Chicken-Leg</p>
+                        <img src="./Images/Icon Signalisation/Youtube.png" alt="arrow">
+                        <img src="./Images/Icon/arrow-white.png" alt="arrow-white">
+                    </div>
+                    <div class="box">
+                        <img src="./Images/Icon/005-cocktail.png" alt="food-gold">
+                        <img src="./Images/Icon/drink-white.png" alt="food-white">
+                        <p>Energy Drink</p>
+                        <img src="./Images/Icon Signalisation/Youtube.png" alt="arrow">
+                        <img src="./Images/Icon/arrow-white.png" alt="arrow-white">
+                    </div>
+                    <div class="box">
+                        <img src="./Images/Icon/006-marin.png" alt="food-gold">
+                        <img src="./Images/Icon/shrimp-white.png" alt="food-white">
+                        <p>Shrimp</p>
+                        <img src="./Images/Icon Signalisation/Youtube.png" alt="arrow">
+                        <img src="./Images/Icon/arrow-white.png" alt="arrow-white">
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="./Images/Icon/003-coffee.png">
-                    <p>Coffee-Cup</p>
-                    <img src="./Images/Icon Signalisation/Youtube.png">
-                </div>
-                <div class="box">
-                    <img src="./Images/Icon/004-chicken-leg.png">
-                    <p>Chicken-Leg</p>
-                    <img src="./Images/Icon Signalisation/Youtube.png">
-                </div>
-                <div class="box">
-                    <img src="./Images/Icon/005-cocktail.png">
-                    <p>Energy Drink</p>
-                    <img src="./Images/Icon Signalisation/Youtube.png">
-                </div>
-                <div class="box">
-                    <img src="./Images/Icon/006-marin.png">
-                    <p>Shrimp</p>
-                    <img src="./Images/Icon Signalisation/Youtube.png">
-                </div>
-                <img src="./Images/champignon.png">
+                <img src="./Images/champignon.png" alt="mushroom">
             </div>
         </section>
 
 <!----------------------------------------------------------------------->
-<!-- Demi-Page - Assiettes - mi-Pg3 -->
+<!-- Demi-Page - Assiettes -->
         <section class="plates">
             <div class="containerBis">
                 <img src="./Images/Gallery/imgfood1.png">
@@ -95,7 +116,7 @@
 <!----------------------------------------------------------------------->
 <!-- Page 3 - About Us -->
 
-        <section class="about" id="About">
+        <section class="About" id="About">
             <div class="container">
                 <h2>About Us</h2>
                 <h3>Why choose us</h3>
