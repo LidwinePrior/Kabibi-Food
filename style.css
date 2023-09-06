@@ -132,8 +132,7 @@ header .booking a {
 .category {
   background-color: #FAF6F0;
 }
-
-.titles:before {
+.category .titles:before {
   position: absolute;
   left: 5%;
   content: "Category";
@@ -141,25 +140,24 @@ header .booking a {
   color: #C8A96A;
   opacity: 10%;
 }
-
-.titles {
+.category .titles {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.titles .subtitles {
+.category .titles .subtitles {
   padding: 10px;
   padding: 10px;
   text-align: center;
 }
-.titles .subtitles h3 {
+.category .titles .subtitles h3 {
   font-size: 1.5em;
 }
-.titles .subtitles h4 {
+.category .titles .subtitles h4 {
   font-size: 0.6em;
 }
-.titles img[alt=leaf] {
+.category .titles img[alt=leaf] {
   position: absolute;
   left: 60%;
   width: 30%;

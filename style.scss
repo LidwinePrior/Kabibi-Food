@@ -150,40 +150,39 @@ header {
 
 .category {
     background-color: $colorBgLight;
-}
-.titles:before {
-    position: absolute;
-    left: 5%;
-    content: "Category";
-    font-size: 4em;
-    color: $colorGold;
-    opacity: 10%;
-}
-
-.titles{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    .subtitles {
-        padding: 10px;
-        padding: 10px;
-        text-align: center;
-        h3{
-            font-size: 1.5em;
-        }
-        h4{
-            font-size: 0.6em;
-        }  
+    .titles:before {
+        position: absolute;
+        left: 5%;
+        content: "Category";
+        font-size: 4em;
+        color: $colorGold;
+        opacity: 10%;
     }
-    img[alt="leaf"] {
+    .titles{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .subtitles {
+            padding: 10px;
+            padding: 10px;
+            text-align: center;
+            h3{
+                font-size: 1.5em;
+            }
+            h4{
+                font-size: 0.6em;
+            }  
+        }
+        img[alt="leaf"] {
             position: absolute;
             left: 60%;
             width: 30%;
             margin: 0;
             z-index: 2;
-            
+                
         }
+    }
 }
 
 
