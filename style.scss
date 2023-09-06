@@ -2,6 +2,104 @@
 
 .container {
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr 2fr 2fr 2fr 2fr 3fr 2fr;
+    grid-template-rows: repeat (8, 1fr);
     border: 1px solid black;
+    box-sizing: content-box;
+    width: 100%;
+}
+
+
+.category {
+    background-color: $colorBgLight;
+}
+.titles:before {
+    position: absolute;
+    left: 5%;
+    content: "Category";
+    font-size: 4em;
+    color: $colorGold;
+    opacity: 10%;
+}
+
+.titles{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .subtitles {
+        padding: 10px;
+        padding: 10px;
+        text-align: center;
+        h3{
+            font-size: 1.5em;
+        }
+        h4{
+            font-size: 0.6em;
+        }  
+    }
+    img[alt="leaf"] {
+            position: absolute;
+            left: 60%;
+            width: 30%;
+            margin: 0;
+            z-index: 2;
+            
+        }
+}
+
+
+.boxes{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 90%;
+    .box{
+        background-color: $colorLight;
+        text-align: center;
+        padding: 10px 0;            
+        img[alt="food-gold"] {
+            width: 20%;
+        }
+        img[alt="food-white"] {
+            width: 20%;
+            display: none;
+        }
+        img[alt="arrow"] {
+        width: 5%;
+        }
+        img[alt="arrow-white"] {
+            width: 5%;
+            display: none;
+        }
+        &:hover {
+            background-color: $colorGold;
+            color:$colorLight;
+            position: relative;
+            img[alt="food-gold"]{
+                display: none;
+            }
+            img[alt="food-white"] {
+                display: inline-block;
+            }
+            img[alt="arrow"] {
+                display: none;
+            }
+            img[alt="arrow-white"] {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+img[alt="mushroom"]{
+    width: 20%;
+}
+
+
+@media screen and (min-width:410px) and (max-width:768px) {
+}
+
+@media screen and (min-width: 768px) {
 }

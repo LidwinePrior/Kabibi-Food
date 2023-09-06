@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Kababi Food</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- Bannière Logo - Menu - HomePage -->
+
     <header id="Home">
         <div class="container">
-            <nav>
-                <img src="./Images/Icon/logo.png">
-                <div class="dropdown">
-                    <button class="mainmenubtn"><img src="./Images/Icon/menu_hamburger1-removebg-preview.png"></button>
-                    <div class="dropdow-child">
-                        <a href="#">Home</a>
-                        <a href="#About">About</a>
-                        <a href="#">Page</a>
-                        <a href="#">Shop</a>
-                        <a href="#ctc">Contact</a>
-                    </div>
+            <img src="./Images/Icon/logo.png">
+            <div class="dropdown">
+                <button class="mainMenuButton"><img src="./Images/Icon/menu_hamburger1-removebg-preview.png"></button>
+                <div class="dropdow-child">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#ctc">Contact</a></li>
+                    </ul>
                 </div>
                 <div class="phone">
                     <img src="./Images/Icon Contact/phone.png">
@@ -28,66 +30,89 @@
                 <div class="booking">
                     <button>Book a table <img src="./Images/Icon Signalisation/Youtube.png"></button>
                 </div>
-            </nav>
-            <div class="slogan">
-                <h1>Best quality foods</h1>
-                <img src="./Images/Icon/iconbgabout.png">
+                <div class="slogan">
+                    <h1>Best quality foods</h1>
+                    <img src="./Images/Icon/iconbgabout.png">
             </div>
-            <button>Explore our menu <img src="./Images/Icon Signalisation/Youtube.png"></button>
+            <button>Explore our menu <img src="./Images/Icon Signalisation/Youtube.png"></button>  <!--manque la flèche-->
         </div>
     </header>
+
     <!---------------------------------------------------------------->
     <main>
-        <div class="container">
-            <section class="category">
-                <h2>Category</h2>
-                <h3>Choose your best category</h3>
-                <h4>Best foods for you & family</h4>
-                <img src="./Images/feuille.png">
-                <div class="box">
-                    <img src="./Images/Icon/001-cheeseburger.png">
-                    <p>Cheesburger</p>
-                    <img src="./Images/Icon Signalisation/Youtube.png">
+    <!-- Page 2 - Category -->
+
+        <section class="category">
+            <div class="container">
+                <div class="titles">
+                    <div class="subtitles">
+                        <h3>Choose your best category</h3>
+                        <h4>Best foods for you & family</h4>
+                    </div>
+                    <img src="./Images/feuille.png" alt="leaf">
                 </div>
-                <div class="box">
-                    <img src="./Images/Icon/002-pizza.png">
-                    <p>Pizza Slice</p>
-                    <img src="./Images/Icon Signalisation/Youtube.png">
+                <div class="boxes">
+                    <div class="box">
+                        <img src="./Images/Icon/001-cheeseburger.png" alt="food-gold">
+                        <img src="./Images/Icon/burger-white.png" alt="food-white">
+                        <p>Cheesburger</p>
+                        <img src="./Images/Icon Signalisation/Youtube.png" alt="arrow">
+                        <img src="./Images/Icon/arrow-white.png" alt="arrow-white">
+                    </div>
+                    <div class="box">
+                        <img src="./Images/Icon/002-pizza.png" alt="food-gold">
+                        <img src="./Images/Icon/pizza-white.png" alt="food-white">
+                        <p>Pizza Slice</p>
+                        <img src="./Images/Icon Signalisation/Youtube.png" alt="arrow">
+                        <img src="./Images/Icon/arrow-white.png" alt="arrow-white">
+                    </div>
+                    <div class="box">
+                        <img src="./Images/Icon/003-coffee.png" alt="food-gold">
+                        <img src="./Images/Icon/coffee-white.png" alt="food-white">
+                        <p>Coffee-Cup</p>
+                        <img src="./Images/Icon Signalisation/Youtube.png" alt="arrow">
+                        <img src="./Images/Icon/arrow-white.png" alt="arrow-white">
+                    </div>
+                    <div class="box">
+                        <img src="./Images/Icon/004-chicken-leg.png" alt="food-gold">
+                        <img src="./Images/Icon/chicken-white.png" alt="food-white">
+                        <p>Chicken-Leg</p>
+                        <img src="./Images/Icon Signalisation/Youtube.png" alt="arrow">
+                        <img src="./Images/Icon/arrow-white.png" alt="arrow-white">
+                    </div>
+                    <div class="box">
+                        <img src="./Images/Icon/005-cocktail.png" alt="food-gold">
+                        <img src="./Images/Icon/drink-white.png" alt="food-white">
+                        <p>Energy Drink</p>
+                        <img src="./Images/Icon Signalisation/Youtube.png" alt="arrow">
+                        <img src="./Images/Icon/arrow-white.png" alt="arrow-white">
+                    </div>
+                    <div class="box">
+                        <img src="./Images/Icon/006-marin.png" alt="food-gold">
+                        <img src="./Images/Icon/shrimp-white.png" alt="food-white">
+                        <p>Shrimp</p>
+                        <img src="./Images/Icon Signalisation/Youtube.png" alt="arrow">
+                        <img src="./Images/Icon/arrow-white.png" alt="arrow-white">
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="./Images/Icon/003-coffee.png">
-                    <p>Coffee-Cup</p>
-                    <img src="./Images/Icon Signalisation/Youtube.png">
-                </div>
-                <div class="box">
-                    <img src="./Images/Icon/004-chicken-leg.png">
-                    <p>Chicken-Leg</p>
-                    <img src="./Images/Icon Signalisation/Youtube.png">
-                </div>
-                <div class="box">
-                    <img src="./Images/Icon/005-cocktail.png">
-                    <p>Energy Drink</p>
-                    <img src="./Images/Icon Signalisation/Youtube.png">
-                </div>
-                <div class="box">
-                    <img src="./Images/Icon/006-marin.png">
-                    <p>Shrimp</p>
-                    <img src="./Images/Icon Signalisation/Youtube.png">
-                </div>
-                <img src="./Images/champignon.png">
-            </section>
-        </div>
+                <img src="./Images/champignon.png" alt="mushroom">
+            </div>
+        </section>
+
 <!----------------------------------------------------------------------->
-        <div class="container">   
-            <section class="plates">
+<!-- Demi-Page - Assiettes -->
+        <section class="plates">
+            <div class="containerBis">
                 <img src="./Images/Gallery/imgfood1.png">
                 <img src="./Images/Gallery/imgfood2.jpg">
                 <img src="./Images/Gallery/imgfood3.png">
-            </section>
-        </div>
+            </div>
+        </section>
 <!----------------------------------------------------------------------->
-        <div class="container">
-            <section id="About" class="About">
+<!-- Page 3 - About Us -->
+
+        <section class="About" id="About">
+            <div class="container">
                 <h2>About Us</h2>
                 <h3>Why choose us</h3>
                 <h4>Best foods for you & family</h4>
@@ -95,11 +120,13 @@
                 <img src="./Images/Food/img_aboutus_home1.jpg">
                 <p>We welcome you in a friendly and warm setting. Our staff is available to advise you. On the plate, we offer you a clever mix of authenticity and refinement. Our priority? Make you have a pleasant time</p>
                 <button>Descover more <img src="./Images/Icon Signalisation/Youtube.png"></button>
-            </section>
-        </div>
+            </div>
+        </section>
 <!-------------------------------------------------------------------------->
-        <div class="container">
-            <section id="Food" class="menu">
+<!-- Page 4 - Our Menu -->
+
+        <section class="menu" id="Food">
+            <div class="container">
                 <h2>Our menu</h2>
                 <h3>Try our special offer</h3>
                 <h4>Best foods for you & family</h4>
@@ -145,11 +172,13 @@
                     <p>$89</p>
                 </div>
                 <img src="./Images/Food/img2bg-our-menu.jpg">
-            </section>
-        </div>
+            </div>
+        </section>
 <!---------------------------------------------------------------------->
-        <div class="container">
-            <section id="Gly" class="gallery">
+<!-- Page 5 - Gallery -->
+
+        <section class="gallery" id="Gallery">
+            <div class="container">
                 <h2>Gallery</h2>
                 <h3>Restaurants photo gallery</h3>
                 <h4>Best foods for you & family</h4>
@@ -160,11 +189,13 @@
                 <img src="./Images/Gallery/img5gallerybox.jpg">
                 <img src="./Images/Gallery/img6gallerybox.jpg">
                 <button>View more photos <img src="./Images/Icon Signalisation/Youtube.png"></button>
-            </section>
-        </div>
+            </div>
+        </section>
 <!----------------------------------------------------------------------->
-        <div class="container">
-            <section class="chefs">
+<!-- Page 6 - Meet Chefs -->
+
+        <section class="chefs">
+            <div class="container">
                 <h2>Our chefs</h2>
                 <h3>Meet professional chefs</h3>
                 <h4>Best foods for you & family</h4>
@@ -172,11 +203,13 @@
                 <img src="./Images/People/img2team.jpg">
                 <img src="./Images/People/img3team.jpg">
                 <img src="./Images/People/img4team.jpg">
-            </section>
-        </div>
+            </div>
+        </section>
 <!---------------------------------------------------------------------->
-        <div class="container">
-            <section class="blog">
+<!-- Page 7 - News & Blog -->
+
+        <section class="blog">
+            <div class="container">
                 <h2>Our blog</h2>
                 <h3>Latest news & blog</h3>
                 <h4>Best foods for you & family</h4>
@@ -209,50 +242,50 @@
                     <img src="./Images/Icon/Icone resto 4.png">
                     <img src="./Images/Icon/Icone Resto 5.png">
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
 <!----------------------------------------------------------------------->
     <footer>
-        <div class="container">
-            <img src="./Images/Icon/logo2.png">
-            <div class="social-media">
-                <a href="#"><img src="./Images/Icon Contact/Facebook.png"></a>
-                <a href="#"><img src="./Images/Icon Contact/twitter.png"></a>
-                <a href="#"><img src="./Images/Icon Contact/Youtube.png"></a>
-                <a href="#"><img src="./Images/Icon Contact/Linkedin.png"></a>
-            </div>
-            <div class="mail">
-                <h6>Newsletters</h6>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-            </div>
-            <div class="Abt">
-                <h6>About</h6>
-                <a href="#Home">Home</a>
-                <a href="#About">Our Story</a>
-                <a href="#">The Settings</a>
-                <a href="#">The Suites</a>
-                <a href="#Food">Food List</a>
-            </div>
-            <div class="fclt">
-                <h6>Facilities</h6>
-                <a href="#">The Fontus Spa</a>
-                <a href="#">Experiences</a>
-                <a href="#">Private Functions</a>
-                <a href="#Gly">Gallery, Events</a>
-                <a href="#Food">Special Offers</a>
-            </div>
-            <div id="ctc" class="call">
-                <h6>Contact</h6>
-                <p><img src="./Images/Icon Signalisation/location-removebg-preview.png">55 Main Street, D-Block, 2nd Floor, Melbourne, Australia</p>
-                <a href="mailto:support@gmail.com"><img src="./Images/Icon Signalisation/email-open-removebg-preview.png">support@gmail.com</a>
-                <p><img src="./Images/Icon Contact/phone.png">+012(345)67899</p>
-                <p><img src="./Images/Icon Signalisation/clock-removebg-preview.png">08am - 06pm</p>
-            </div>
-            <img src="./Images/Icon/iconup@2x.png">
-            <p>Copyright 2021 The Kababi - Restaurant HTML Template. Designed by Themesflat</p>
+        
+        <img src="./Images/Icon/logo2.png">
+        <div class="social-media">
+            <a href="#"><img src="./Images/Icon Contact/Facebook.png"></a>
+            <a href="#"><img src="./Images/Icon Contact/twitter.png"></a>
+            <a href="#"><img src="./Images/Icon Contact/Youtube.png"></a>
+            <a href="#"><img src="./Images/Icon Contact/Linkedin.png"></a>
         </div>
+        <div class="mail">
+            <h6>Newsletters</h6>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="Abt">
+            <h6>About</h6>
+            <a href="#Home">Home</a>
+            <a href="#About">Our Story</a>
+            <a href="#">The Settings</a>
+            <a href="#">The Suites</a>
+            <a href="#Food">Food List</a>
+        </div>
+        <div class="fclt">
+            <h6>Facilities</h6>
+            <a href="#">The Fontus Spa</a>
+            <a href="#">Experiences</a>
+            <a href="#">Private Functions</a>
+            <a href="#Gly">Gallery, Events</a>
+            <a href="#Food">Special Offers</a>
+        </div>
+        <div id="ctc" class="call">
+            <h6>Contact</h6>
+            <p><img src="./Images/Icon Signalisation/location-removebg-preview.png">55 Main Street, D-Block, 2nd Floor, Melbourne, Australia</p>
+            <a href="mailto:support@gmail.com"><img src="./Images/Icon Signalisation/email-open-removebg-preview.png">support@gmail.com</a>
+            <p><img src="./Images/Icon Contact/phone.png">+012(345)67899</p>
+            <p><img src="./Images/Icon Signalisation/clock-removebg-preview.png">08am - 06pm</p>
+        </div>
+        <img src="./Images/Icon/iconup@2x.png">
+        <p>Copyright 2021 The Kababi - Restaurant HTML Template. Designed by Themesflat</p>
+
     </footer>
 </body>
 </html>
