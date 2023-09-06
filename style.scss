@@ -10,9 +10,9 @@ body { //collé au bord
     display: grid;
     grid-template-rows: repeat(8,1fr);
     border: 1px solid black;
-    height: 100vh;
-    width: auto;
-    box-sizing: content-box;
+    box-sizing: content-box;    
+    width: 100%;
+
 }
 
 .mainMenuButton {
@@ -56,7 +56,7 @@ header {
                     }
 
                     &:hover { // & = a:hover
-                    color: $colorGold; // Couleur au survol
+                    color: $colorGold; 
                     }
                 }
             }
@@ -145,7 +145,7 @@ header {
     }
 }
 // Home Page ---------------------------------------------------------------
-
+// Page 3 - About Us -------------------------------------------------------
 
 
 
