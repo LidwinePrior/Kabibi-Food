@@ -126,7 +126,7 @@ header {
         display: none;
     }
     #home {
-        padding: 0 5% 25% 0;
+        padding: 0 5% 15% 0;
     }
 }
 
@@ -542,7 +542,7 @@ h4 {
         }
     }
 }
-
+// ----------------------------------------------------------------
 //-Page 6-Meet Chefs-(Lid)-------------------------------------------
 
 .chefs {
@@ -592,14 +592,18 @@ h4 {
         .box-blog {
             padding: 20px;
             border: 1px solid $colorGold;
-            margin: 0 10px 10px 10px; // espace exterieur de l'article
+            margin: 10px; // espace exterieur de l'article
             box-sizing: border-box;
             background-color: $colorBgLight;
-                .people {
-                    align-items: center;
-                    max-width: 100%;
-                    height: auto;
-                }
+            .people {
+                align-items: center;
+                max-width: 100%;
+                height: auto;
+            }
+            .itemInfo {
+                display: flex;
+                justify-content: flex-start;
+            }
         }
 }
 p {
@@ -608,7 +612,7 @@ p {
     text-transform: capitalize;
         img { //icon article
             margin-right: 5px;
-            width: 5%;
+            width: 10%;
             vertical-align: middle; //aligné sur le milieu de la cellule
         }
 }
@@ -642,7 +646,7 @@ p {
         margin: 5%; // espaces entre 
     }
 }
-
+// ------------------------------------------------------------------------------
 
 //------Page 8 - Footer--------------------------------------------------------------
 
