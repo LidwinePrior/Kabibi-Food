@@ -1,6 +1,6 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Open+Sans:wght@300;400;700&display=swap');
-
+// Propriétés déterminées au départ (Lid - Eli)
 body { //collé au bord
     padding: 0; 
     margin: 0;
@@ -9,7 +9,6 @@ body { //collé au bord
 .container {
     box-sizing: content-box;    
     width: 100%;
-
 }
 
 .mainMenuButton {
@@ -18,10 +17,11 @@ body { //collé au bord
     border-radius: 5px;
 }
 
-// Home Page ---------------------------------------------------------------
+// Home Page (Eli)---------------------------------------------------------------
 header {
     display: flex;
     align-items: center; // marge d'écriture au centre
+    flex-wrap: wrap;
     padding: 25px 15px;
 
     .logoKababi {
@@ -38,7 +38,7 @@ header {
             margin-left: 20%;
 
             li {
-            margin: 0 20px; // créée un espace entre
+                margin: 0 20px; // créée un espace entre
     
                 a {
                     text-decoration: none;
@@ -49,7 +49,7 @@ header {
 
                     i {
                         margin-left: 5px;
-                        font-size: 0.7rem; // 70%
+                        font-size: 0.7rem;
                     }
 
                     &:hover { // & = a:hover
@@ -91,6 +91,38 @@ header {
     }
 }
 
+.menuButton {
+    display: none;
+    background-color: $colorGold;
+    color: $colorLight;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem; 
+}
+// Media query pour HomePage Pc>>Mobile
+@media screen and (max-width: 768px) {
+    header nav ul {
+        display: none; 
+    }
+    header nav ul.active {
+      display: block; // quand on l'active elle s'affiche (barre menu)
+    }
+    .booking {
+        margin: 20px 0;
+    }
+    .headerPhone {
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .menuButton {
+        display: block;// affiche menu Hamburger
+    }
+}
 #home {
     // dégradé = voir cssgradient.io
     background: linear-gradient(145deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 100%), url('./Images/BG/img_bg_slider_home01.jpg');
@@ -99,6 +131,7 @@ header {
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+
     h1 {
         font-size: 8rem; // rem = % de la taille de base
         line-height: 8rem;
@@ -126,7 +159,7 @@ header {
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
         font-size: 0.75rem;
-        margin-left: 13%; // aligné au titre
+        margin-left: 13%; //pour qu'il soit l'un en dessous de l'autre (titre)
     }
     .boutonPlay {
         position: absolute;
@@ -141,10 +174,9 @@ header {
         font-size: 1.5rem; // icone = caractère spécial donc, les propriétés de texte
     }
 }
-// Home Page ---------------------------------------------------------------
-// Page 3 - About Us -------------------------------------------------------
+// Home Page fin ---------------------------------------------------------------
 
-
+// Page 2 - Category (Lid)--------------------------------------------------
 .category {
     background-color: $colorBgLight;
     .titles:before {
@@ -175,12 +207,9 @@ header {
             width: 30%;
             margin: 0;
             z-index: 2;
-                
-        }
+        }       
     }
 }
-
-
 .boxes{
     margin: auto;
     display: grid;
@@ -200,7 +229,7 @@ header {
             display: none;
         }
         img[alt="arrow"] {
-        width: 5%;
+            width: 5%;
         }
         img[alt="arrow-white"] {
             width: 5%;
@@ -225,14 +254,142 @@ header {
         }
     }
 }
-
 img[alt="mushroom"]{
-    width: 20%;
+        width: 20%;
 }
 
+@media screen and (min-width:410px) and (max-width:768px) {
+}
 
+@media screen and (min-width: 768px) {
+}
+// Page 2 - Category Fin -------------------------------------------------------------------
 
-//Page 4 - Our Menu------------------------------------------
+// Page 3 - About Us (Eli) -------------------------------------------------------
+.plates {
+    background-color: $colorLight;
+    display: flex;
+    justify-content: space-between; // Espace équitablement les images
+    flex-wrap: wrap;
+    align-items: center;
+    .unQuart {
+        width: 25%;
+        margin-bottom: 20px;
+        height: auto;
+    }
+    .unDemi {
+        width: 40%;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        border: solid 15px $colorLight;
+        margin-top: -100px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .plates {
+        flex-direction: column; 
+        align-items: center;
+
+    .unQuart, .unDemi {
+        max-width: 100%; // Ajuste largeur (mobile)
+        margin-bottom: 10px; // Entre les images (mobile)
+        margin-top: 0;
+    }
+    }
+}
+
+.about {
+    background-color: $colorLight;
+    padding-bottom: 60px;
+}
+#head {
+    position: relative; //les positions qui suivent s'ancrent dans cette "id"
+}
+.bestLabel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 5%;
+    margin-top: 15%;
+    max-width: 20%; 
+}
+h2 {
+    position: absolute;
+    text-align: center;
+    color: $colorGold;
+    opacity: 0.2;
+    font-size: 5.5rem;
+    font-weight: 200;
+    font-family: 'Forum';
+    text-transform: uppercase;
+    margin-left: 0%;
+    margin-top: 5%;
+}
+h3 {
+    color: $colorDark;
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-family: 'Forum';
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;
+    padding-top: 15%;
+    width: 50%; 
+}
+h4 {
+    font-size: 0.8rem;
+    font-family: 'Forum';
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 30px;
+}         
+.mainAbout {
+    display: flex;
+    justify-content: space-between; // espace équitablement les pix
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+        div {
+            flex: 1; // div prennent une largeur égale
+        }
+        img {
+            vertical-align: middle;
+            max-width: 100%;
+            height: auto;
+        }
+        p {
+            font-family: 'Forum';
+            padding: 15px;
+        }
+}
+
+    .mainAbout {
+      flex-direction: column; //les deux div sont en colonne (mobile)
+      align-items: center; // centrer horizontalement (mobile)
+    }
+
+        .discoverMore {
+            padding: 15px;
+            a {
+                width: 50%;
+                background-color: $colorGold;
+                color: $colorLight;
+                bottom: 0;
+                padding: 15px 30px;
+                border-radius: 5px;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                font-size: 0.8rem; 
+            }
+        }
+
+// About us fin-------------------------------------------------------
+
+//Page 4 - Our Menu (Lid)-----------------------------------------
 
 .menu {
     background-color: $colorBgLight;
@@ -306,11 +463,9 @@ img[alt="mushroom"]{
 
 
 .gallery {
-    background-color: $colorLig;
+    background-color: $colorLight;
 }
 
-
-     
 //@media screen and (min-width:410px) and (max-width:768px) {}
 
 //@media screen and (min-width: 768px) {}

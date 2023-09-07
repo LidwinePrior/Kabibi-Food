@@ -5,10 +5,6 @@ body {
 }
 
 .container {
-  display: grid;
-  grid-template-rows: repeat 8, 1fr;
-  border: 1px solid black;
-  box-sizing: content-box;
   width: 100%;
 }
 
@@ -21,6 +17,7 @@ body {
 header {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   padding: 25px 15px;
 }
 header .logoKababi {
@@ -79,6 +76,38 @@ header .booking a {
   font-size: 0.8rem;
 }
 
+.menuButton {
+  display: none;
+  background-color: #C8A96A;
+  color: #FDFCFA;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  header nav ul {
+    display: none;
+  }
+  header nav ul.active {
+    display: block;
+  }
+  .booking {
+    margin: 20px 0;
+  }
+  .headerPhone {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .menuButton {
+    display: block;
+  }
+}
 #home {
   background: linear-gradient(145deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%), url("Images/BG/img_bg_slider_home01.jpg");
   background-size: cover;
@@ -132,7 +161,8 @@ header .booking a {
 .category {
   background-color: #FAF6F0;
 }
-.category .titles:before {
+
+.titles:before {
   position: absolute;
   left: 5%;
   content: "Category";
@@ -140,7 +170,8 @@ header .booking a {
   color: #C8A96A;
   opacity: 10%;
 }
-.category .titles {
+
+.titles {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -151,13 +182,13 @@ header .booking a {
   padding: 10px;
   text-align: center;
 }
-.category .titles .subtitles h3 {
+.titles .subtitles h3 {
   font-size: 1.5em;
 }
-.category .titles .subtitles h4 {
+.titles .subtitles h4 {
   font-size: 0.6em;
 }
-.category .titles img[alt=leaf] {
+.titles img[alt=leaf] {
   position: absolute;
   left: 60%;
   width: 30%;
@@ -212,6 +243,131 @@ header .booking a {
 
 img[alt=mushroom] {
   width: 20%;
+}
+
+.plates {
+  background-color: #FDFCFA;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.plates .unQuart {
+  width: 25%;
+  margin-bottom: 20px;
+  height: auto;
+}
+.plates .unDemi {
+  width: 40%;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: solid 15px #FDFCFA;
+  margin-top: -100px;
+}
+
+@media screen and (max-width: 768px) {
+  .plates {
+    flex-direction: column;
+    align-items: center;
+  }
+  .plates .unQuart, .plates .unDemi {
+    max-width: 100%;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+}
+.about {
+  background-color: #FDFCFA;
+  padding-bottom: 60px;
+}
+
+#head {
+  position: relative;
+}
+.bestLabel {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 5%;
+  margin-top: 15%;
+  max-width: 20%;
+}
+
+h2 {
+  position: absolute;
+  text-align: center;
+  color: #C8A96A;
+  opacity: 0.2;
+  font-size: 5.5rem;
+  font-weight: 200;
+  font-family: "Forum";
+  text-transform: uppercase;
+  margin-left: 0%;
+  margin-top: 5%;
+}
+
+h3 {
+  color: #090D0F;
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-family: "Forum";
+  text-transform: uppercase;
+  margin: auto;
+  text-align: center;
+  padding-top: 15%;
+  width: 50%;
+}
+
+h4 {
+  font-size: 0.8rem;
+  font-family: "Forum";
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.mainAbout {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.mainAbout div {
+  flex: 1;
+}
+.mainAbout img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+.mainAbout p {
+  font-family: "Forum";
+  padding: 15px;
+}
+
+.mainAbout {
+  flex-direction: column;
+  align-items: center;
+}
+
+.discoverMore {
+  padding: 15px;
+}
+.discoverMore a {
+  width: 50%;
+  background-color: #C8A96A;
+  color: #FDFCFA;
+  bottom: 0;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
 }
 
 .menu {
@@ -283,5 +439,6 @@ img[alt=mushroom] {
   color: #C8A96A;
 }
 
-
-/*# sourceMappingURL=style.css.map */
+.gallery {
+  background-color: #FDFCFA;
+}/*# sourceMappingURL=style.css.map */
