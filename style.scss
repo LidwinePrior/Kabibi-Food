@@ -474,6 +474,7 @@ h4 {
 .gallery {
     background-color: colorLight;
     text-align: center;
+    padding: 0 0 5% 0;
     .titles:before {
         position: absolute;
         left: 5%;
@@ -524,19 +525,20 @@ h4 {
             }
         }
     }
-    .buttonView {
-        background-color: transparent;
-        border: 1px solid rgb(71, 71, 71,0.2);
-        padding: 10px 0;
-        border-radius: 5px;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 600;
-        font-size: 0.5em;
-        cursor: pointer;
-        img{
-            width: 5%;
+    .viewMore {
+        padding: 15px;
+        a {
+            width: 50%;
+            background-color: $colorGold;
+            color: $colorLight;
+            bottom: 0;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 0.8rem; 
         }
     }
 }

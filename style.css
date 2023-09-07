@@ -446,6 +446,7 @@ h4 {
 .gallery {
   background-color: colorLight;
   text-align: center;
+  padding: 0 0 5% 0;
 }
 .gallery .titles:before {
   position: absolute;
@@ -496,20 +497,21 @@ h4 {
 .gallery .slide .img1:hover, .gallery .slide .img2:hover {
   transform: scale(1.5);
 }
-.gallery .buttonView {
-  background-color: transparent;
-  border: 1px solid rgba(71, 71, 71, 0.2);
-  padding: 10px 0;
+.gallery .viewMore {
+  padding: 15px;
+}
+.gallery .viewMore a {
+  width: 50%;
+  background-color: #C8A96A;
+  color: #FDFCFA;
+  bottom: 0;
+  padding: 15px 30px;
   border-radius: 5px;
   text-transform: uppercase;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 0.5em;
-  cursor: pointer;
-}
-.gallery .buttonView img {
-  width: 5%;
+  font-size: 0.8rem;
 }
 
 .chefs {
