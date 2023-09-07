@@ -30,9 +30,6 @@ header {
     }
 
     nav {
-        position: absolute;
-        top: 25%;
-        left: 50%;
         ul {
             list-style: none;
             padding: 0;
@@ -112,6 +109,9 @@ header {
         display: none; 
     }
     header nav ul.active {
+        position: absolute;
+        top: 25%;
+        left: 37%;
       display: block; // quand on l'active elle s'affiche (barre menu)
     }
     .booking {
