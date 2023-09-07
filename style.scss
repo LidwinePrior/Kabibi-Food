@@ -458,6 +458,7 @@ h4 {
         gap: 10px;
         width: 90%;
         z-index: 1;
+        padding-bottom: 10%;
         .box-price {
             background-color: $colorLight;
             border: 1px dotted $colorGold;
@@ -742,54 +743,59 @@ footer{
         }
 
     }
-    .foot {
-        display: flex;
-        flex-direction: column;
-        padding-left: 5%;
-        .email-container {
-            display:flex;
-            align-items:center;
-            input {
-                width: 50%;
-                height: 25px;
-                font-size: 0.5em;
-                text-align:center;
+    .global-foot {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
+        margin: auto;
+        .foot {
+            display: flex;
+            flex-direction: column;
+            padding-left: 5%;
+            .email-container {
+                display:flex;
+                align-items:center;
+                input {
+                    width: 250px;
+                    height: 30px;
+                    font-size: 0.8em;
+                    text-align:center;
+                    border: none;
+                }
+            }
+            .send-email {
+                color: $colorLight;
+                background-color: $colorGold;
+                cursor: pointer;
+                height: 32px;
                 border: none;
             }
-        }
-        .send-email {
-            color: $colorLight;
-            background-color: $colorGold;
-            cursor: pointer;
-            height: 27px;
-            border: none;
-        }
-        h6 {
-            font-size: 1.2em;
-            color: $colorLight;
-        }
-
-        a {
-            text-decoration: none;
-            color: $colorIcon;
-        }
-        img {
-            width: 20px;
-        }
-        .contact {
-            width: 80%;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            .A {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                img{
-                    padding-right: 5%;
+            h6 {
+                font-size: 1.2em;
+                color: $colorLight;
+            }
+            a {
+                text-decoration: none;
+                color: $colorIcon;
+            }
+            img {
+                width: 20px;
+            }
+            .contact {
+                width: 80%;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                .A {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    img{
+                        padding-right: 5%;
+                    }
                 }
             }
         }
-
         img[alt="spoon"] {
             position: absolute;
             right: 38%;
@@ -801,6 +807,27 @@ footer{
             text-align: center;
             border-top: 1px solid $colorIcon;
             z-index: 2;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .global-foot {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 60%;
+            .foot {
+                width: 250px;
+                justify-self: center;
+            }
+        }
+            img[alt="spoon"] {
+            position: absolute;
+            left: 50%;
+            
+        }
+        .copy {
+            padding-bottom: 80px;
+            padding-top:200px;
         }
     }
 }    

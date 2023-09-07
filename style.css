@@ -437,6 +437,7 @@ h4 {
   gap: 10px;
   width: 90%;
   z-index: 1;
+  padding-bottom: 10%;
 }
 .menu .box-prices .box-price {
   background-color: #FDFCFA;
@@ -702,62 +703,89 @@ footer .social-media img {
 footer .social-media img:hover {
   background-color: #C8A96A;
 }
-footer .foot {
+footer .global-foot {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: auto;
+}
+footer .global-foot .foot {
   display: flex;
   flex-direction: column;
   padding-left: 5%;
 }
-footer .foot .email-container {
+footer .global-foot .foot .email-container {
   display: flex;
   align-items: center;
 }
-footer .foot .email-container input {
-  width: 50%;
-  height: 25px;
-  font-size: 0.5em;
+footer .global-foot .foot .email-container input {
+  width: 250px;
+  height: 30px;
+  font-size: 0.8em;
   text-align: center;
   border: none;
 }
-footer .foot .send-email {
+footer .global-foot .foot .send-email {
   color: #FDFCFA;
   background-color: #C8A96A;
   cursor: pointer;
-  height: 27px;
+  height: 32px;
   border: none;
 }
-footer .foot h6 {
+footer .global-foot .foot h6 {
   font-size: 1.2em;
   color: #FDFCFA;
 }
-footer .foot a {
+footer .global-foot .foot a {
   text-decoration: none;
   color: #B4B4B4;
 }
-footer .foot img {
+footer .global-foot .foot img {
   width: 20px;
 }
-footer .foot .contact {
+footer .global-foot .foot .contact {
   width: 80%;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
-footer .foot .contact .A {
+footer .global-foot .foot .contact .A {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-footer .foot .contact .A img {
+footer .global-foot .foot .contact .A img {
   padding-right: 5%;
 }
-footer .foot img[alt=spoon] {
+footer .global-foot img[alt=spoon] {
   position: absolute;
   right: 38%;
   width: 100px;
   z-index: 1;
 }
-footer .foot .copy {
+footer .global-foot .copy {
   padding: 30% 0;
   text-align: center;
   border-top: 1px solid #B4B4B4;
   z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  footer .global-foot {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 60%;
+  }
+  footer .global-foot .foot {
+    width: 250px;
+    justify-self: center;
+  }
+  footer img[alt=spoon] {
+    position: absolute;
+    left: 50%;
+  }
+  footer .copy {
+    padding-bottom: 80px;
+    padding-top: 200px;
+  }
 }/*# sourceMappingURL=style.css.map */
