@@ -126,7 +126,7 @@ header {
         display: none;
     }
     #home {
-        padding: 0 0 25% 0;
+        padding: 0 5% 25% 0;
     }
 }
 
@@ -140,8 +140,8 @@ header {
     width: 100%;
 
     h1 {
-        font-size: 8rem; // rem = % de la taille de base
-        line-height: 8rem;
+        font-size: 5.3rem; // rem = % de la taille de base
+        line-height: 7rem;
         font-weight: 200;
         font-family: 'Forum';
         text-transform: uppercase;
@@ -151,7 +151,7 @@ header {
         width: 30%; // largeur de titre
         img {
             float: right;
-            max-width: 140px;
+            max-width: 8rem;
             margin-top: -40px; // pour remonter
         }
     }

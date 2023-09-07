@@ -112,7 +112,7 @@ header .booking a {
     display: none;
   }
   #home {
-    padding: 0 0 25% 0;
+    padding: 0 5% 25% 0;
   }
 }
 #home {
@@ -124,8 +124,8 @@ header .booking a {
   width: 100%;
 }
 #home h1 {
-  font-size: 8rem;
-  line-height: 8rem;
+  font-size: 5.3rem;
+  line-height: 7rem;
   font-weight: 200;
   font-family: "Forum";
   text-transform: uppercase;
@@ -136,7 +136,7 @@ header .booking a {
 }
 #home h1 img {
   float: right;
-  max-width: 140px;
+  max-width: 8rem;
   margin-top: -40px;
 }
 #home .boutonExplore {
