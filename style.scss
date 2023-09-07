@@ -741,7 +741,6 @@ footer{
                 background-color: $colorGold;
             }
         }
-
     }
     .global-foot {
         display: grid;
@@ -796,18 +795,18 @@ footer{
                 }
             }
         }
-        img[alt="spoon"] {
-            position: absolute;
-            right: 38%;
-            width: 100px;
-            z-index: 1;
-        }
-        .copy {
-            padding: 30% 0;
-            text-align: center;
-            border-top: 1px solid $colorIcon;
-            z-index: 2;
-        }
+    }
+    img[alt="spoon"] {
+        position: absolute;
+        right: 38%;
+        width: 100px;
+        z-index: 1;
+    }
+    .copy {
+        padding: 30% 0;
+        text-align: center;
+        border-top: 1px solid $colorIcon;
+        z-index: 2;
     }
     @media screen and (min-width: 768px) {
         .global-foot {
