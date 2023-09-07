@@ -122,7 +122,14 @@ header {
     .menuButton {
         display: block;// affiche menu Hamburger
     }
+    .boutonPlay {
+        display: none;
+    }
+    #home {
+        padding: 0 0 25% 0;
+    }
 }
+
 #home {
     // dégradé = voir cssgradient.io
     background: linear-gradient(145deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 100%), url('./Images/BG/img_bg_slider_home01.jpg');
