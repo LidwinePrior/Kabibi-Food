@@ -757,13 +757,13 @@ footer .global-foot .foot .contact .A {
 footer .global-foot .foot .contact .A img {
   padding-right: 5%;
 }
-footer .global-foot img[alt=spoon] {
+footer img[alt=spoon] {
   position: absolute;
   right: 38%;
   width: 100px;
   z-index: 1;
 }
-footer .global-foot .copy {
+footer .copy {
   padding: 30% 0;
   text-align: center;
   border-top: 1px solid #B4B4B4;
