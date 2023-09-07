@@ -5,6 +5,7 @@ body {
 }
 
 .container {
+  box-sizing: content-box;
   width: 100%;
 }
 
@@ -109,7 +110,7 @@ header .booking a {
   }
 }
 #home {
-  background: linear-gradient(145deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%), url("Images/BG/img_bg_slider_home01.jpg");
+  background: linear-gradient(145deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%), url("./Images/BG/img_bg_slider_home01.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -161,8 +162,7 @@ header .booking a {
 .category {
   background-color: #FAF6F0;
 }
-
-.titles:before {
+.category .titles:before {
   position: absolute;
   left: 5%;
   content: "Category";
@@ -170,25 +170,22 @@ header .booking a {
   color: #C8A96A;
   opacity: 10%;
 }
-
-.titles {
+.category .titles {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.titles .subtitles {
-  padding: 10px;
-  padding: 10px;
+.category .titles .subtitles {
   text-align: center;
 }
-.titles .subtitles h3 {
+.category .titles .subtitles h3 {
   font-size: 1.5em;
 }
-.titles .subtitles h4 {
+.category .titles .subtitles h4 {
   font-size: 0.6em;
 }
-.titles img[alt=leaf] {
+.category .titles img[alt=leaf] {
   position: absolute;
   left: 60%;
   width: 30%;
@@ -284,6 +281,7 @@ img[alt=mushroom] {
 #head {
   position: relative;
 }
+
 .bestLabel {
   position: absolute;
   right: 0;
@@ -440,5 +438,110 @@ h4 {
 }
 
 .gallery {
-  background-color: #FDFCFA;
+  background-color: colorLight;
+  text-align: center;
+}
+.gallery .titles:before {
+  position: absolute;
+  left: 5%;
+  content: "Gallery";
+  font-size: 4em;
+  color: #C8A96A;
+  opacity: 10%;
+}
+.gallery .titles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.gallery .titles .subtitles {
+  text-align: center;
+}
+.gallery .titles .subtitles h3 {
+  font-size: 1.5em;
+}
+.gallery .titles .subtitles h4 {
+  font-size: 0.6em;
+}
+.gallery .slide {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: 80%;
+  gap: 5px;
+}
+.gallery .slide .img1 {
+  grid-column: 1/3;
+}
+.gallery .slide .img1 img[alt=image1] {
+  width: 100%;
+}
+.gallery .slide .img2 {
+  grid-column-start: 1/2;
+}
+.gallery .slide .img2 img[alt=image2] {
+  width: 100%;
+}
+.gallery .slide .img1, .gallery .slide .img2 {
+  transform: 0.3s;
+}
+.gallery .slide .img1:hover, .gallery .slide .img2:hover {
+  transform: scale(1.5);
+}
+.gallery .buttonView {
+  background-color: transparent;
+  border: 1px solid rgba(71, 71, 71, 0.2);
+  padding: 10px 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.5em;
+  cursor: pointer;
+}
+.gallery .buttonView img {
+  width: 5%;
+}
+
+.chefs {
+  background-color: #090D0F;
+}
+.chefs .titles:before {
+  position: absolute;
+  left: 5%;
+  content: "Our chefs";
+  font-size: 4em;
+  color: #C8A96A;
+  opacity: 10%;
+}
+.chefs .titles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #FDFCFA;
+}
+.chefs .titles .subtitles {
+  text-align: center;
+}
+.chefs .titles .subtitles h3 {
+  font-size: 1.5em;
+}
+.chefs .titles .subtitles h4 {
+  font-size: 0.6em;
+}
+.chefs .photo-chefs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 5%;
+}
+.chefs .photo-chefs img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
