@@ -283,11 +283,5 @@ img[alt=mushroom] {
   color: #C8A96A;
 }
 
-.gallery .slide {
-  width: 90%;
-  height: 60%;
-  overflow: auto;
-}
-.gallery .slide img[alt=scroll] {
-  max-width: 100%;
-}/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */
