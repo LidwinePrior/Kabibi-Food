@@ -272,7 +272,7 @@ img[alt="mushroom"]{
 }
 // Page 2 - Category Fin -------------------------------------------------------------------
 
-// Page 3 - About Us (Eli) -------------------------------------------------------
+// Page 3 - Plates (Eli) -------------------------------------------------------
 .plates {
     background-color: $colorLight;
     display: flex;
@@ -304,7 +304,7 @@ img[alt="mushroom"]{
     }
     }
 }
-
+// Page 3 bis - About (Eli)----------------------------------------------------
 .about {
     background-color: $colorLight;
     padding-bottom: 60px;
@@ -585,3 +585,150 @@ h4 {
     }
 }
 //-------------------------------------------------------------------------
+// Page 7 - News & blog (Eli)----------------------------------------------
+.blog-container {
+    display: flex;
+    flex-direction: column;
+        .box-blog {
+            padding: 20px;
+            border: 1px solid $colorGold;
+            margin: 0 10px 10px 10px; // espace exterieur de l'article
+            box-sizing: border-box;
+            background-color: $colorBgLight;
+                .people {
+                    align-items: center;
+                    max-width: 100%;
+                    height: auto;
+                }
+        }
+}
+p {
+    margin: 10px 0;
+    font-family: 'Forum';
+    text-transform: capitalize;
+        img { //icon article
+            margin-right: 5px;
+            width: 5%;
+            vertical-align: middle; //aligné sur le milieu de la cellule
+        }
+}
+
+.readMore {
+    text-align: right;
+    padding: 15px;
+    a {
+        width: 50%;
+        background-color: $colorGold;
+        color: $colorLight;
+        bottom: 0;
+        padding: 15px 30px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 0.8rem; 
+    }
+}
+
+.iconResto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    img {
+        width: 20%;
+        max-height: 90%; 
+        margin: 5%; // espaces entre 
+    }
+}
+
+
+//------Page 8 - Footer--------------------------------------------------------------
+
+footer{
+    background-color: $background-colorDark;
+    color: $colorIcon;
+    .logo-footer{
+        width: 100%;
+        text-align: center;
+        padding-top: 5%;
+    }
+    .social-media {
+        text-align: center;
+        img {
+            background-color: gray;
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+            border-radius: 100%;
+            &:hover {
+                background-color: $colorGold;
+            }
+        }
+
+    }
+    .foot {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+            .email-container {
+                display:flex;
+                align-items:center;
+                    input {
+                        width: 50%;
+                        height: 25px;
+                        font-size: 0.5em;
+                        text-align:center;
+                        border: none;
+                    }
+            }
+            .send-email {
+                color: $colorLight;
+                background-color: $colorGold;
+                cursor: pointer;
+                height: 27px;
+                border: none;
+            }
+    }
+
+
+        h6 {
+            font-size: 1.2em;
+            color: $colorLight;
+        }
+
+        a {
+            text-decoration: none;
+            color: $colorIcon;
+        }
+        img {
+                width: 20px;
+            }
+        .contact {
+            width: 80%;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+                .A {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                        img{
+                            padding-right: 5%;
+                        }
+                }
+        }
+
+        img[alt="spoon"] {
+            position: absolute;
+            right: 38%;
+            width: 100px;
+            z-index: 1;
+        }
+        .copy {
+            padding: 30% 0;
+            text-align: center;
+            border-top: 1px solid $colorIcon;
+            z-index: 2;
+        }
+}

@@ -552,4 +552,143 @@ h4 {
 }
 .chefs .photo-chefs img {
   width: 100%;
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+}
+.blog-container .box-blog {
+  padding: 20px;
+  border: 1px solid #C8A96A;
+  margin: 0 10px 10px 10px;
+  box-sizing: border-box;
+  background-color: #FAF6F0;
+}
+.blog-container .box-blog .people {
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 10px 0;
+  font-family: "Forum";
+  text-transform: capitalize;
+}
+p img {
+  margin-right: 5px;
+  width: 5%;
+  vertical-align: middle;
+}
+
+.readMore {
+  text-align: right;
+  padding: 15px;
+}
+.readMore a {
+  width: 50%;
+  background-color: #C8A96A;
+  color: #FDFCFA;
+  bottom: 0;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.iconResto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.iconResto img {
+  width: 20%;
+  max-height: 90%;
+  margin: 5%;
+}
+
+footer {
+  background-color: #090D0F;
+  color: #B4B4B4;
+}
+footer .logo-footer {
+  width: 100%;
+  text-align: center;
+  padding-top: 5%;
+}
+footer .social-media {
+  text-align: center;
+}
+footer .social-media img {
+  background-color: gray;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 100%;
+}
+footer .social-media img:hover {
+  background-color: #C8A96A;
+}
+footer .foot {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+}
+footer .foot .email-container {
+  display: flex;
+  align-items: center;
+}
+footer .foot .email-container input {
+  width: 50%;
+  height: 25px;
+  font-size: 0.5em;
+  text-align: center;
+  border: none;
+}
+footer .foot .send-email {
+  color: #FDFCFA;
+  background-color: #C8A96A;
+  cursor: pointer;
+  height: 27px;
+  border: none;
+}
+footer h6 {
+  font-size: 1.2em;
+  color: #FDFCFA;
+}
+footer a {
+  text-decoration: none;
+  color: #B4B4B4;
+}
+footer img {
+  width: 20px;
+}
+footer .contact {
+  width: 80%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+footer .contact .A {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .contact .A img {
+  padding-right: 5%;
+}
+footer img[alt=spoon] {
+  position: absolute;
+  right: 38%;
+  width: 100px;
+  z-index: 1;
+}
+footer .copy {
+  padding: 30% 0;
+  text-align: center;
+  border-top: 1px solid #B4B4B4;
+  z-index: 2;
 }/*# sourceMappingURL=style.css.map */
