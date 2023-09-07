@@ -25,6 +25,11 @@ header .logoKababi {
   max-width: 140px;
   margin-left: 4%;
 }
+header nav {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+}
 header nav ul {
   list-style: none;
   padding: 0;
