@@ -255,7 +255,7 @@ header .booking a {
   display: inline-block;
 }
 .category img[alt=mushroom] {
-  width: 150px;
+  max-width: 20%;
 }
 @media screen and (min-xidth: 410px) and (max-width: 768px) {
   .category .boxes {
