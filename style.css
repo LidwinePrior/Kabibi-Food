@@ -168,39 +168,48 @@ header .booking a {
   font-size: 1.5rem;
 }
 
-.category {
-  background-color: #FAF6F0;
+.title {
+  position: relative;
 }
-.category .titles:before {
+.title .leaf {
   position: absolute;
-  left: 5%;
-  content: "Category";
-  font-size: 4em;
+  right: 0%;
+  margin-right: 5%;
+  margin-top: 15%;
+  max-width: 20%;
+}
+.title h2 {
+  position: absolute;
+  text-align: left;
   color: #C8A96A;
-  opacity: 10%;
+  opacity: 0.2;
+  font-size: 4rem;
+  font-weight: 200;
+  font-family: "Forum";
+  text-transform: uppercase;
+  margin-left: 0%;
+  margin-top: 5%;
 }
-.category .titles {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.category .titles .subtitles {
+.title h3 {
+  color: #090D0F;
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-family: "Forum";
+  text-transform: uppercase;
+  margin: auto;
   text-align: center;
+  padding-top: 15%;
+  width: 50%;
 }
-.category .titles .subtitles h3 {
-  font-size: 1.5em;
+.title h4 {
+  font-size: 0.8rem;
+  font-family: "Forum";
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  margin-bottom: 30px;
 }
-.category .titles .subtitles h4 {
-  font-size: 0.6em;
-}
-.category .titles img[alt=leaf] {
-  position: absolute;
-  left: 60%;
-  width: 150px;
-  margin: 0;
-  z-index: 2;
-}
+
 .category .boxes {
   margin: auto;
   display: grid;
@@ -393,29 +402,6 @@ h4 {
 .menu {
   background-color: #FAF6F0;
 }
-.menu .titles:before {
-  position: absolute;
-  left: 5%;
-  content: "Category";
-  font-size: 4em;
-  color: #C8A96A;
-  opacity: 10%;
-}
-.menu .titles {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.menu .titles .subtitles {
-  text-align: center;
-}
-.menu .titles .subtitles h3 {
-  font-size: 1.5em;
-}
-.menu .titles .subtitles h4 {
-  font-size: 0.6em;
-}
 .menu img[alt=bread] {
   position: absolute;
   right: 0%;
@@ -497,29 +483,6 @@ h4 {
   text-align: center;
   padding: 0 0 5% 0;
 }
-.gallery .titles:before {
-  position: absolute;
-  left: 5%;
-  content: "Gallery";
-  font-size: 4em;
-  color: #C8A96A;
-  opacity: 10%;
-}
-.gallery .titles {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.gallery .titles .subtitles {
-  text-align: center;
-}
-.gallery .titles .subtitles h3 {
-  font-size: 1.5em;
-}
-.gallery .titles .subtitles h4 {
-  font-size: 0.6em;
-}
 .gallery .slide {
   margin: auto;
   display: grid;
@@ -577,30 +540,8 @@ h4 {
 .chefs {
   background-color: #090D0F;
 }
-.chefs .titles:before {
-  position: absolute;
-  left: 5%;
-  content: "Our chefs";
-  font-size: 4em;
-  color: #C8A96A;
-  opacity: 10%;
-}
-.chefs .titles {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.chefs .title h3, .chefs .title h4 {
   color: #FDFCFA;
-}
-.chefs .titles .subtitles {
-  text-align: center;
-}
-.chefs .titles .subtitles h3 {
-  font-size: 1.5em;
-  color: #FDFCFA;
-}
-.chefs .titles .subtitles h4 {
-  font-size: 0.6em;
 }
 .chefs .photo-chefs {
   display: grid;
@@ -730,7 +671,7 @@ footer .global-foot .foot .send-email {
   color: #FDFCFA;
   background-color: #C8A96A;
   cursor: pointer;
-  height: 32px;
+  height: 100%;
   border: none;
 }
 footer .global-foot .foot h6 {

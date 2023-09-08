@@ -187,39 +187,48 @@ header {
 // Home Page fin ---------------------------------------------------------------
 
 // Page 2 - Category (Lid)--------------------------------------------------
-.category {
-    background-color: $colorBgLight;
-    .titles:before {
+.title {
+    position: relative;
+    .leaf {
         position: absolute;
-        left: 5%;
-        content: "Category";
-        font-size: 4em;
+        right: 0%;
+        margin-right: 5%;
+        margin-top: 15%;
+        max-width: 20%;
+    }
+    h2 {
+        position: absolute;
+        text-align:left;
         color: $colorGold;
-        opacity: 10%;
+        opacity: 0.2;
+        font-size: 4rem;
+        font-weight: 200;
+        font-family: 'Forum';
+        text-transform: uppercase;
+        margin-left: 0%;
+        margin-top: 5%;
     }
-    .titles{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        .subtitles {
-            text-align: center;
-            h3{
-                font-size: 1.5em;
-            }
-            h4{
-                font-size: 0.6em;
-            }  
-        }
-        img[alt="leaf"] {
-            position: absolute;
-            left: 60%;
-            width: 150px;
-            margin: 0;
-            z-index: 2;
-        }       
+    h3 {
+        color: $colorDark;
+        font-size: 1.5rem;
+        font-weight: 200;
+        font-family: 'Forum';
+        text-transform: uppercase;
+        margin: auto;
+        text-align: center;
+        padding-top: 15%;
+        width: 50%;
     }
-
+    h4 {
+        font-size: 0.8rem;
+        font-family: 'Forum';
+        text-align: center;
+        margin: auto;
+        width: 50%;
+        margin-bottom: 30px;  
+    }
+}
+.category { 
     .boxes{
         margin: auto;
         display: grid;
@@ -414,29 +423,7 @@ h4 {
 
 .menu {
     background-color: $colorBgLight;
-    .titles:before {
-        position: absolute;
-        left: 5%;
-        content: "Category";
-        font-size: 4em;
-        color: $colorGold;
-        opacity: 10%;
-    }
-    .titles{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        .subtitles {
-            text-align: center;
-            h3{
-                font-size: 1.5em;
-            }
-            h4{
-                font-size: 0.6em;
-            }
-        }
-    }
+    
     img[alt="bread"] {
         position:absolute;
         right: 0%;;
@@ -524,29 +511,7 @@ h4 {
     background-color: colorLight;
     text-align: center;
     padding: 0 0 5% 0;
-    .titles:before {
-        position: absolute;
-        left: 5%;
-        content: "Gallery";
-        font-size: 4em;
-        color: $colorGold;
-        opacity: 10%;
-    }
-    .titles{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        .subtitles {
-            text-align: center;
-            h3{
-                font-size: 1.5em;
-            }
-            h4{
-                font-size: 0.6em;
-            }
-        }
-    }
+   
     .slide {
         margin: auto;
         display: grid;
@@ -607,29 +572,10 @@ h4 {
 
 .chefs {
     background-color: $colorDark;
-    .titles:before {
-        position: absolute;
-        left: 5%;
-        content: "Our chefs";
-        font-size: 4em;
-        color: $colorGold;
-        opacity: 10%;
-    }
-    .titles{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        color: $colorLight;
-        .subtitles {
-            text-align: center;
-            h3{
-                font-size: 1.5em;
-                color: $colorLight;
-            }
-            h4{
-                font-size: 0.6em;
-            }
+    
+    .title {
+        h3, h4 {
+            color: $colorLight;
         }
     }
     .photo-chefs {
@@ -767,7 +713,7 @@ footer{
                 color: $colorLight;
                 background-color: $colorGold;
                 cursor: pointer;
-                height: 32px;
+                height: 100%;
                 border: none;
             }
             h6 {
